@@ -199,6 +199,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Gjermund Bjaanes";
 				TargetAttributes = {
+					7C7C247317F7114E006DF446 = {
+						DevelopmentTeam = FEJ3WA4PXR;
+					};
 					7C7C249417F7114E006DF446 = {
 						TestTargetID = 7C7C247317F7114E006DF446;
 					};
@@ -378,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PauseApp/PauseApp-Prefix.pch";
 				INFOPLIST_FILE = "PauseApp/PauseApp-Info.plist";
@@ -391,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PauseApp/PauseApp-Prefix.pch";
 				INFOPLIST_FILE = "PauseApp/PauseApp-Info.plist";
