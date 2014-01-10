@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>63FE5B7E-53AC-498C-BF43-C15B0E750883</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PauseApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>40C2CF77-B95F-4039-A720-FCFAD011DBB3</key>
+		<string>https://github.com/bjaanes/PauseApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PauseApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>40C2CF77-B95F-4039-A720-FCFAD011DBB3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bjaanes/PauseApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>40C2CF77-B95F-4039-A720-FCFAD011DBB3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>40C2CF77-B95F-4039-A720-FCFAD011DBB3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PauseApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
