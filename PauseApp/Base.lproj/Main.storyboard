@@ -33,7 +33,7 @@
                                     <action selector="startTimer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="x7W-Lb-sPB"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="1" maxValue="120" translatesAutoresizingMaskIntoConstraints="NO" id="qgQ-FQ-RTx">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="1" maxValue="3600" translatesAutoresizingMaskIntoConstraints="NO" id="qgQ-FQ-RTx">
                                 <rect key="frame" x="73" y="451" width="175" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>

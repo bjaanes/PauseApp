@@ -52,8 +52,11 @@
 
 - (void)updateTimeLeft:(NSTimer*)timer
 {
-    if (self.alertTime.timeIntervalSinceNow <= 0) {
-        [self.countdownLabel setText:[self secondsToNicelyFormattedString:0]];
+    if (timer == nil) // Probably the first you open the app
+        [self.countdownLabel setText:[self secondsToNicelyFormattedString:(int)self.setTimeSlider.value]];
+    else if (self.alertTime.timeIntervalSinceNow <= 0) {
+        //[self.countdownLabel setText:[self secondsToNicelyFormattedString:0]];
+        [self.countdownLabel setText:@"Done!"];
         [timer invalidate];
     } else {
         [self.countdownLabel setText:[self secondsToNicelyFormattedString:(int)self.alertTime.timeIntervalSinceNow]];
@@ -66,7 +69,7 @@
     int min = seconds/60;
     int sec = seconds%60;
     
-    NSString *nicelyFormattedString = [[NSString alloc] initWithFormat:@"%d:%d", min, sec];
+    NSString *nicelyFormattedString = [[NSString alloc] initWithFormat:@"%02d:%02d", min, sec];
     
     return nicelyFormattedString;
 }
