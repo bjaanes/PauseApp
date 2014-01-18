@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AudioToolbox/AudioServices.h>
 
 @implementation AppDelegate
 
@@ -17,12 +18,15 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Pause!"
-                                                    message:@"Time to take a break!"
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK" otherButtonTitles:nil];
-     [alert show];
+    NSLog(@"didReceiveLocalNotification");
+    if( application.applicationState == UIApplicationStateActive) {
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Pause!"
+                                                        message:@"Time to take a break!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
     
 }
 

@@ -8,20 +8,17 @@
 
 #import "ViewController.h"
 
+
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *countdownLabel;
 @property (weak, nonatomic) NSTimer *timer;
-@property (weak, nonatomic) IBOutlet UISlider *setTimeSlider;
 @property (strong, nonatomic) NSDate *alertTime;
+@property (weak, nonatomic) IBOutlet UIDatePicker *timePicker;
+@property (weak, nonatomic) IBOutlet UIButton *startStopButton;
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    [self.countdownLabel setText:[self secondsToNicelyFormattedString:(int)self.setTimeSlider.value]];
-}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -29,37 +26,54 @@
     [self updateTimeLeft:self.timer];
 }
 
-- (IBAction)startTimer:(id)sender {
-    self.alertTime = [NSDate dateWithTimeIntervalSinceNow:self.setTimeSlider.value];
-    if (self.timer) [self.timer invalidate];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1
-                                                  target:self selector:@selector(updateTimeLeft:)
-                                                userInfo:nil repeats:YES];
-    
-    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-    localNotification.fireDate = self.alertTime;
-    localNotification.timeZone = [NSTimeZone defaultTimeZone];
-    localNotification.alertBody = @"Time to take a break!";
-    localNotification.alertAction = NSLocalizedString(@"View Details", nil);
-    localNotification.soundName = UILocalNotificationDefaultSoundName;
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-}
-
-
-- (IBAction)sliderValueChanged:(id)sender {
-    [self.countdownLabel setText:[self secondsToNicelyFormattedString:self.setTimeSlider.value]];
-}
-
-- (void)updateTimeLeft:(NSTimer*)timer
-{
-    if (timer == nil) // Probably the first you open the app
-        [self.countdownLabel setText:[self secondsToNicelyFormattedString:(int)self.setTimeSlider.value]];
-    else if (self.alertTime.timeIntervalSinceNow <= 0) {
-        //[self.countdownLabel setText:[self secondsToNicelyFormattedString:0]];
-        [self.countdownLabel setText:@"Done!"];
-        [timer invalidate];
+- (IBAction)startTimer:(UIButton *)sender {
+    if ([sender.titleLabel.text isEqualToString:@"Start"]) {
+        // clean-up just in case
+        if (self.timer) [self.timer invalidate];
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+        
+        // Set up timer
+        self.alertTime = [NSDate dateWithTimeIntervalSinceNow:[self.timePicker countDownDuration]];
+        //self.alertTime = [NSDate dateWithTimeIntervalSinceNow:7.0];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                                      target:self
+                                                    selector:@selector(updateTimeLeft:)
+                                                    userInfo:nil
+                                                     repeats:YES];
+        [self updateTimeLeft:self.timer];
+        
+        // Set up and schedule a local notification
+        UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+        localNotification.fireDate = self.alertTime;
+        localNotification.timeZone = [NSTimeZone defaultTimeZone];
+        localNotification.alertBody = @"Time to take a break!";
+        localNotification.alertAction = NSLocalizedString(@"View Details", nil); //??
+        localNotification.soundName = UILocalNotificationDefaultSoundName;
+        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+        
+        [sender setTitle:@"Stop" forState:UIControlStateNormal];
     } else {
-        [self.countdownLabel setText:[self secondsToNicelyFormattedString:(int)self.alertTime.timeIntervalSinceNow]];
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+        [self.timer invalidate];
+        [self updateTimeLeft:self.timer];
+        [sender setTitle:@"Start" forState:UIControlStateNormal];
+    }
+}
+
+- (void)updateTimeLeft:(NSTimer*)timer // need timer beacuse of NSTimer selector
+{
+    //NSLog(@"FIRE!");
+    if (timer == nil) { // Probably the first you open the app
+        [self.countdownLabel setText:[self secondsToNicelyFormattedString:0]];
+    }
+    else if (self.alertTime.timeIntervalSinceNow <= 0) {
+        [self.countdownLabel setText:[self secondsToNicelyFormattedString:0]];
+        [timer invalidate];
+        [self.startStopButton setTitle:@"Start" forState:UIControlStateNormal];
+    }
+    else {
+        [self.countdownLabel setText:
+         [self secondsToNicelyFormattedString:(int)self.alertTime.timeIntervalSinceNow]];
     }
     
 }
@@ -72,12 +86,6 @@
     NSString *nicelyFormattedString = [[NSString alloc] initWithFormat:@"%02d:%02d", min, sec];
     
     return nicelyFormattedString;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
