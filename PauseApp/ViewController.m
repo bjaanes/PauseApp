@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  PauseApp
+//  Take A Break
 //
 //  Created by Gjermund Bjaanes on 28.09.13.
 //  Copyright (c) 2013 Gjermund Bjaanes. All rights reserved.
@@ -28,13 +28,14 @@
 
 - (IBAction)startTimer:(UIButton *)sender {
     if ([sender.titleLabel.text isEqualToString:@"Start"]) {
+        // Time to start it all!
         // clean-up just in case
         if (self.timer) [self.timer invalidate];
         [[UIApplication sharedApplication] cancelAllLocalNotifications];
         
         // Set up timer
         self.alertTime = [NSDate dateWithTimeIntervalSinceNow:[self.timePicker countDownDuration]];
-        //self.alertTime = [NSDate dateWithTimeIntervalSinceNow:7.0];
+        //self.alertTime = [NSDate dateWithTimeIntervalSinceNow:7];
         self.timer = [NSTimer scheduledTimerWithTimeInterval:1
                                                       target:self
                                                     selector:@selector(updateTimeLeft:)
@@ -51,10 +52,14 @@
         localNotification.soundName = UILocalNotificationDefaultSoundName;
         [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
         
+        //localNotification.
+        
         [sender setTitle:@"Stop" forState:UIControlStateNormal];
     } else {
+        // Time to stop it all!
         [[UIApplication sharedApplication] cancelAllLocalNotifications];
         [self.timer invalidate];
+        self.timer = nil;
         [self updateTimeLeft:self.timer];
         [sender setTitle:@"Start" forState:UIControlStateNormal];
     }
@@ -62,8 +67,7 @@
 
 - (void)updateTimeLeft:(NSTimer*)timer // need timer beacuse of NSTimer selector
 {
-    //NSLog(@"FIRE!");
-    if (timer == nil) { // Probably the first you open the app
+    if (timer == nil) {
         [self.countdownLabel setText:[self secondsToNicelyFormattedString:0]];
     }
     else if (self.alertTime.timeIntervalSinceNow <= 0) {

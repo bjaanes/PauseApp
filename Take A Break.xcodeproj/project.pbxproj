@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C722043189D5634005FE4EA /* iPad-Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C722042189D5634005FE4EA /* iPad-Main.storyboard */; };
 		7C7C247817F7114E006DF446 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7C247717F7114E006DF446 /* Foundation.framework */; };
 		7C7C247A17F7114E006DF446 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7C247917F7114E006DF446 /* CoreGraphics.framework */; };
 		7C7C247C17F7114E006DF446 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7C247B17F7114E006DF446 /* UIKit.framework */; };
@@ -20,7 +21,7 @@
 		7C7C249817F7114E006DF446 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7C247717F7114E006DF446 /* Foundation.framework */; };
 		7C7C249917F7114E006DF446 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7C247B17F7114E006DF446 /* UIKit.framework */; };
 		7C7C24A117F7114E006DF446 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C7C249F17F7114E006DF446 /* InfoPlist.strings */; };
-		7C7C24A317F7114E006DF446 /* PauseAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C24A217F7114E006DF446 /* PauseAppTests.m */; };
+		7C7C24A317F7114E006DF446 /* Take A Break-Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C24A217F7114E006DF446 /* Take A Break-Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,25 +35,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7C7C247417F7114E006DF446 /* PauseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PauseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C722042189D5634005FE4EA /* iPad-Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "iPad-Main.storyboard"; path = "../iPad-Main.storyboard"; sourceTree = "<group>"; };
+		7C7C247417F7114E006DF446 /* Take A Break.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take A Break.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C7C247717F7114E006DF446 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7C7C247917F7114E006DF446 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7C7C247B17F7114E006DF446 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7C7C247F17F7114E006DF446 /* PauseApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PauseApp-Info.plist"; sourceTree = "<group>"; };
+		7C7C247F17F7114E006DF446 /* Take A Break-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Take A Break-Info.plist"; sourceTree = "<group>"; };
 		7C7C248117F7114E006DF446 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C7C248317F7114E006DF446 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7C7C248517F7114E006DF446 /* PauseApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PauseApp-Prefix.pch"; sourceTree = "<group>"; };
+		7C7C248517F7114E006DF446 /* Take A Break-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Take A Break-Prefix.pch"; sourceTree = "<group>"; };
 		7C7C248617F7114E006DF446 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7C7C248717F7114E006DF446 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7C7C248A17F7114E006DF446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C7C248C17F7114E006DF446 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7C7C248D17F7114E006DF446 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7C7C248F17F7114E006DF446 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7C7C249517F7114E006DF446 /* PauseAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PauseAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7C249517F7114E006DF446 /* Take A BreakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Take A BreakTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C7C249617F7114E006DF446 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7C7C249E17F7114E006DF446 /* PauseAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PauseAppTests-Info.plist"; sourceTree = "<group>"; };
+		7C7C249E17F7114E006DF446 /* Take A BreakTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Take A BreakTests-Info.plist"; sourceTree = "<group>"; };
 		7C7C24A017F7114E006DF446 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7C7C24A217F7114E006DF446 /* PauseAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PauseAppTests.m; sourceTree = "<group>"; };
+		7C7C24A217F7114E006DF446 /* Take A Break-Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Take A Break-Tests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +84,8 @@
 		7C7C246B17F7114E006DF446 = {
 			isa = PBXGroup;
 			children = (
-				7C7C247D17F7114E006DF446 /* PauseApp */,
-				7C7C249C17F7114E006DF446 /* PauseAppTests */,
+				7C7C247D17F7114E006DF446 /* Take A Break */,
+				7C7C249C17F7114E006DF446 /* Take-A-BreakTests */,
 				7C7C247617F7114E006DF446 /* Frameworks */,
 				7C7C247517F7114E006DF446 /* Products */,
 			);
@@ -92,8 +94,8 @@
 		7C7C247517F7114E006DF446 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C7C247417F7114E006DF446 /* PauseApp.app */,
-				7C7C249517F7114E006DF446 /* PauseAppTests.xctest */,
+				7C7C247417F7114E006DF446 /* Take A Break.app */,
+				7C7C249517F7114E006DF446 /* Take A BreakTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,44 +111,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7C7C247D17F7114E006DF446 /* PauseApp */ = {
+		7C7C247D17F7114E006DF446 /* Take A Break */ = {
 			isa = PBXGroup;
 			children = (
 				7C7C248617F7114E006DF446 /* AppDelegate.h */,
 				7C7C248717F7114E006DF446 /* AppDelegate.m */,
 				7C7C248917F7114E006DF446 /* Main.storyboard */,
+				7C722042189D5634005FE4EA /* iPad-Main.storyboard */,
 				7C7C248C17F7114E006DF446 /* ViewController.h */,
 				7C7C248D17F7114E006DF446 /* ViewController.m */,
 				7C7C248F17F7114E006DF446 /* Images.xcassets */,
 				7C7C247E17F7114E006DF446 /* Supporting Files */,
 			);
+			name = "Take A Break";
 			path = PauseApp;
 			sourceTree = "<group>";
 		};
 		7C7C247E17F7114E006DF446 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C7C247F17F7114E006DF446 /* PauseApp-Info.plist */,
+				7C7C247F17F7114E006DF446 /* Take A Break-Info.plist */,
 				7C7C248017F7114E006DF446 /* InfoPlist.strings */,
 				7C7C248317F7114E006DF446 /* main.m */,
-				7C7C248517F7114E006DF446 /* PauseApp-Prefix.pch */,
+				7C7C248517F7114E006DF446 /* Take A Break-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7C7C249C17F7114E006DF446 /* PauseAppTests */ = {
+		7C7C249C17F7114E006DF446 /* Take-A-BreakTests */ = {
 			isa = PBXGroup;
 			children = (
-				7C7C24A217F7114E006DF446 /* PauseAppTests.m */,
+				7C7C24A217F7114E006DF446 /* Take A Break-Tests.m */,
 				7C7C249D17F7114E006DF446 /* Supporting Files */,
 			);
+			name = "Take-A-BreakTests";
 			path = PauseAppTests;
 			sourceTree = "<group>";
 		};
 		7C7C249D17F7114E006DF446 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C7C249E17F7114E006DF446 /* PauseAppTests-Info.plist */,
+				7C7C249E17F7114E006DF446 /* Take A BreakTests-Info.plist */,
 				7C7C249F17F7114E006DF446 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -155,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C7C247317F7114E006DF446 /* PauseApp */ = {
+		7C7C247317F7114E006DF446 /* Take A Break */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C7C24A617F7114E006DF446 /* Build configuration list for PBXNativeTarget "PauseApp" */;
+			buildConfigurationList = 7C7C24A617F7114E006DF446 /* Build configuration list for PBXNativeTarget "Take A Break" */;
 			buildPhases = (
 				7C7C247017F7114E006DF446 /* Sources */,
 				7C7C247117F7114E006DF446 /* Frameworks */,
@@ -167,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = PauseApp;
+			name = "Take A Break";
 			productName = PauseApp;
-			productReference = 7C7C247417F7114E006DF446 /* PauseApp.app */;
+			productReference = 7C7C247417F7114E006DF446 /* Take A Break.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7C7C249417F7114E006DF446 /* PauseAppTests */ = {
+		7C7C249417F7114E006DF446 /* Take A BreakTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C7C24A917F7114E006DF446 /* Build configuration list for PBXNativeTarget "PauseAppTests" */;
+			buildConfigurationList = 7C7C24A917F7114E006DF446 /* Build configuration list for PBXNativeTarget "Take A BreakTests" */;
 			buildPhases = (
 				7C7C249117F7114E006DF446 /* Sources */,
 				7C7C249217F7114E006DF446 /* Frameworks */,
@@ -185,9 +190,9 @@
 			dependencies = (
 				7C7C249B17F7114E006DF446 /* PBXTargetDependency */,
 			);
-			name = PauseAppTests;
+			name = "Take A BreakTests";
 			productName = PauseAppTests;
-			productReference = 7C7C249517F7114E006DF446 /* PauseAppTests.xctest */;
+			productReference = 7C7C249517F7114E006DF446 /* Take A BreakTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7C7C246F17F7114E006DF446 /* Build configuration list for PBXProject "PauseApp" */;
+			buildConfigurationList = 7C7C246F17F7114E006DF446 /* Build configuration list for PBXProject "Take A Break" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,8 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C7C247317F7114E006DF446 /* PauseApp */,
-				7C7C249417F7114E006DF446 /* PauseAppTests */,
+				7C7C247317F7114E006DF446 /* Take A Break */,
+				7C7C249417F7114E006DF446 /* Take A BreakTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +239,7 @@
 				7C7C249017F7114E006DF446 /* Images.xcassets in Resources */,
 				7C7C248217F7114E006DF446 /* InfoPlist.strings in Resources */,
 				7C7C248B17F7114E006DF446 /* Main.storyboard in Resources */,
+				7C722043189D5634005FE4EA /* iPad-Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C7C24A317F7114E006DF446 /* PauseAppTests.m in Sources */,
+				7C7C24A317F7114E006DF446 /* Take A Break-Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +277,7 @@
 /* Begin PBXTargetDependency section */
 		7C7C249B17F7114E006DF446 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7C7C247317F7114E006DF446 /* PauseApp */;
+			target = 7C7C247317F7114E006DF446 /* Take A Break */;
 			targetProxy = 7C7C249A17F7114E006DF446 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -360,7 +366,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gjermund Bjaanes (FEJ3WA4PXR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gjermund Bjaanes (FEJ3WA4PXR)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -379,13 +386,15 @@
 		7C7C24A717F7114E006DF446 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PauseApp/PauseApp-Prefix.pch";
-				INFOPLIST_FILE = "PauseApp/PauseApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "PauseApp/Take A Break-Prefix.pch";
+				INFOPLIST_FILE = "PauseApp/Take A Break-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Take A Break";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,13 +402,15 @@
 		7C7C24A817F7114E006DF446 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gjermund Bjaanes (FEJ3WA4PXR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PauseApp/PauseApp-Prefix.pch";
-				INFOPLIST_FILE = "PauseApp/PauseApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "PauseApp/Take A Break-Prefix.pch";
+				INFOPLIST_FILE = "PauseApp/Take A Break-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Take A Break";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -420,8 +431,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "PauseAppTests/PauseAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "PauseAppTests/Take A BreakTests-Info.plist";
+				PRODUCT_NAME = "Take A BreakTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -439,8 +450,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PauseApp/PauseApp-Prefix.pch";
-				INFOPLIST_FILE = "PauseAppTests/PauseAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "PauseAppTests/Take A BreakTests-Info.plist";
+				PRODUCT_NAME = "Take A BreakTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -449,7 +460,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C7C246F17F7114E006DF446 /* Build configuration list for PBXProject "PauseApp" */ = {
+		7C7C246F17F7114E006DF446 /* Build configuration list for PBXProject "Take A Break" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C7C24A417F7114E006DF446 /* Debug */,
@@ -458,7 +469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C7C24A617F7114E006DF446 /* Build configuration list for PBXNativeTarget "PauseApp" */ = {
+		7C7C24A617F7114E006DF446 /* Build configuration list for PBXNativeTarget "Take A Break" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C7C24A717F7114E006DF446 /* Debug */,
@@ -467,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C7C24A917F7114E006DF446 /* Build configuration list for PBXNativeTarget "PauseAppTests" */ = {
+		7C7C24A917F7114E006DF446 /* Build configuration list for PBXNativeTarget "Take A BreakTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C7C24AA17F7114E006DF446 /* Debug */,

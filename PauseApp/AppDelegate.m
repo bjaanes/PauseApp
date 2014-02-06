@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  PauseApp
+//  Take A Break
 //
 //  Created by Gjermund Bjaanes on 28.09.13.
 //  Copyright (c) 2013 Gjermund Bjaanes. All rights reserved.
@@ -21,13 +21,13 @@
     NSLog(@"didReceiveLocalNotification");
     if( application.applicationState == UIApplicationStateActive) {
         AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+        AudioServicesPlaySystemSound(1005); // Alert sound
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Pause!"
                                                         message:@"Time to take a break!"
                                                        delegate:nil
                                               cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
